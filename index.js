@@ -1,13 +1,13 @@
 module.exports = function(num) {
-  if(num % 5 == 0 && num % 3 == 0){
-    return "fizzbuzz"
-  }
-  else if (num % 5 == 0) {
-    return "buzz"
-  }
-  else if (num % 3 == 0){
-    return "fizz"
-  }else{
-    return num
-  }
+
+  var arrayFizzBuzz =[[3, "fizz"],[5, "buzz"],[15,"fizzbuzz"]];
+  var word = num
+
+    arrayFizzBuzz.forEach(function(data){
+      if(num%data[0] == 0){
+        word = data[1]
+      }
+    });
+
+  return word;
 }

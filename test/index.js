@@ -3,7 +3,7 @@ var should = chai.should()
 var fizzbuzz = require('../index')
 
 describe('pengecekan funsi fizz', function () {
-
+  console.log(fizzbuzz);
   it('jika angka habis dibagi tiga akan mencetak kata fizz', function() {
       fizzbuzz(9).should.equal('fizz')
   })
