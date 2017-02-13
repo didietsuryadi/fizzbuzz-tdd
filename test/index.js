@@ -1,9 +1,9 @@
-var assert = require('assert')
 var chai   = require('chai')
 var should = chai.should()
 var fizzbuzz = require('../index')
 
 describe('pengecekan funsi fizz', function () {
+
   it('jika angka habis dibagi tiga akan mencetak kata fizz', function() {
       fizzbuzz(9).should.equal('fizz')
   })
